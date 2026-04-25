@@ -1,0 +1,123 @@
+body {
+ color: #282828;
+ line-height: 1.5;
+ background-color: #FFFFFF;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+div.main {
+ width: 700px;
+ background-color: #F6F6F6;
+ margin : auto;
+ border : 15px;
+ border-color: #0eff00;
+ place-items: center;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.fullMark {
+  background-color: #E5E5E5;
+  color: #000000;
+  padding : 5px;
+  width:500px;
+}
+
+.halfMark {
+  background-color: #E5E5E5;
+  color: #000000;
+  padding : 5px;
+  width:300px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.quarterMark {
+  background-color: #E5E5E5;
+  color: #000000;
+  padding : 5px;
+  width:200px;
+  margin: 0 auto;
+}
+
+form {
+   display: flex;
+   align-items: stretch;
+   width: 700px;
+}
+
+.pxGap {
+   margin-bottom : 5px;
+}
+
+table {
+  border: 1px solid #F0F0F0;
+  table-layout: fixed;
+  width: 700px;
+  background-color: #f0f0f0;
+}
+
+th,
+td {
+  border: 1px solid #F0F0F0;
+  width: 232px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  padding : 0px;
+}
+
+a {
+ font-weight: bold;
+ color: #5A3B1E ;
+ background-color : f0f0f0;
+}
+
+a:hover {
+}
+
+img.wiki {
+ padding: 10px 0px 10px 0px;
+ border-radius: 5%;
+}
+
+table.wiki {
+ border-collapse: collapse;
+}
+
+h1 {
+ margin: 0;
+}
+h3 {
+ padding : 0px;
+ margin: 0px;
+}
+h5 {
+ padding : 0px;
+ margin: 0px;
+}
+
+th.wiki, td.wiki{
+ vertical-align: top;
+ padding: 10px;
+ border: 1px solid #c8c8c8;
+}
+
+.pageButton {
+   font-family: "Gill Sans", sans-serif;
+    background-color: #D0D0D0;
+    color: black;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+   width : 346px;
+   color : #000814;
+   font-weight: bold;
+   font-size: 24px;
+}

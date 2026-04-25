@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>{{ .Title }}</title>
+   <link rel="stylesheet" href="/templs/recipes.css" type="text/css">
+   <meta name="description" content="{{ .Title }}">
+</head>
+<body>
+<div class="main">
+   <div style="text-align: center; margin-bottom: 5px;">
+      <div>
+         <img src="/media/Logo.png" alt="Logo" class="pxGap">
+      </div>
+      {{ if .Params.image }}
+      <div>
+         <img src="{{ .Params.image }}" alt="{{ .Title }}" class="pxGap" width="500">
+      </div>
+      {{ end }}
+      <br>
+      <h1 class="fullMark pxGap">{{ .Title }}</h1>
+      {{ if .Params.source }}
+      <h3 class="halfMark pxGap">Source: {{ .Params.source }}</h3>
+      {{ end }}
+      <br>
+      <h5 class="fullMark pxGap">Ingredients:</h5>
+      <p>{{ .Params.ingredients }}</p>
+      <br>
+      <h5 class="fullMark pxGap">Method:</h5>
+      <p>{{ .Params.method }}</p>
+      <br>
+      {{ if .Params.link }}
+      <h5 class="halfMark pxGap">
+         <a href="{{ .Params.link }}">External Link</a>
+      </h5>
+      {{ end }}
+   </div>
+</div>
+</body>
+</html>

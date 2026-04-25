@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>{{ .Title }}</title>
+   <link rel='stylesheet' href='templs/ss.css' type=text/css>
+   <meta charset="UTF-8">
+</head>
+<body>
+<div class='main'>
+   <div style="text-align: center; margin-bottom: 5px;">
+                <div><img src="media/Logo.png" alt="Logo" class="pxGap" width="700"></div>
+                <button class="pageButton" onclick="window.location.href='homepage'">
+                Home
+                </button>
+                <button class="pageButton pxGap" onclick="window.location.href='sweet_gallery'">
+                Sweet
+                </button>
+                <h1 class="fullMark pxGap">Savoury</h1>
+                <br>
+                <form action="/search" method="GET" id="searchForm">
+                <input type="text" name="query" placeholder="" class="searchBar" id="searchInput"/>
+                <button type="submit" class="searchButton"><img src="media/searchicon.png" width="35" height="35"></button>
+                </form>
+                <br>
+                <button class="pageButton" onclick="window.location.href='savoury_list'">
+                List View
+                </button>
+                <button class="pageButton pxGap" onclick="window.location.href='savoury_gallery'">
+                Gallery View
+                </button>
+                <br></br>
+
+<table>
+   <tr>
+      <td><img src="media/photos/PlaceholderImage10.jpg" alt="Apple" width="349" height="464"></th>
+      <div class="fullMark"><a href="testrecipe">Title 1</a></div>
+      <td><img src="media/photos/PlaceholderImage9.jpg" alt="Apple" width="349" height="464"></th>
+      <div class="fullMark"><a href="testrecipe">Title 2</a></div>
+   </tr>
+   <tr>
+      <td><img src="media/photos/PlaceholderImage7.jpg" alt="Apple" width="349" height="464"></th>
+      <div class="fullMark"><a href="testrecipe">Title 3</a></div>
+      <td><img src="media/photos/PlaceholderImage6.jpg" alt="Apple" width="349" height="464"></th>
+      <div class="fullMark"><a href="testrecipe">Title 4</a></div>
+   </tr>
+   <tr>
+      <td><img src="media/photos/PlaceholderImage4.jpg" alt="Apple" width="349" height="464"></th>
+      <div class="fullMark"><a href="testrecipe">Title 5</a></div>
+      <td><img src="media/photos/PlaceholderImage3.jpg" alt="Apple" width="349" height="464"></th>
+      <div class="fullMark"><a href="testrecipe">Title 6</a></div>
+   </tr>
+</table>
+
+   </div>
+</div>
+</body>
+</html>
+<script>
+document.getElementById("searchForm").addEventListener("submit", function(e) {
+   e.preventDefault();
+   let query = document.getElementById("searchInput").value.trim();
+   if (query === "") return;
+   let formattedQuery = query.split(" ").join("+");
+   window.location.href = `/${formattedQuery}`;
+});
+</script>
