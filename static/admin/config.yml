@@ -23,8 +23,8 @@ collections:
 
       - label: "Ingredients"
         name: "ingredients"
-        widget: "text"
+        widget: "list"
 
       - label: "Method"
         name: "method"
-        widget: "text"
+        widget: "list"
