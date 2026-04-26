@@ -14,23 +14,34 @@ collections:
     slug: "{{slug}}"
 
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Source", name: "source", widget: "string" }
-      - { label: "Link", name: "link", widget: "string" }
-      - { label: "Image", name: "image", widget: "image" }
-
-    - label: "Ingredients"
-      name: "ingredients"
-      widget: "list"
-      field:
-        label: "Ingredient"
-        name: "ingredient"
+      - label: "Title"
+        name: "title"
         widget: "string"
 
-    - label: "Method"
-      name: "method"
-      widget: "list"
-      field:
-        label: "Step"
-        name: "step"
+      - label: "Source"
+        name: "source"
         widget: "string"
+
+      - label: "Link"
+        name: "link"
+        widget: "string"
+
+      - label: "Image"
+        name: "image"
+        widget: "image"
+
+      - label: "Ingredients"
+        name: "ingredients"
+        widget: "list"
+        field:
+          label: "Ingredient"
+          name: "ingredient"
+          widget: "string"
+
+      - label: "Method"
+        name: "method"
+        widget: "list"
+        field:
+          label: "Step"
+          name: "step"
+          widget: "string"
