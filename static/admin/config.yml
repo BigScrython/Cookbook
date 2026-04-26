@@ -1,6 +1,7 @@
 backend:
-  name: proxy
-  proxy_url: http://localhost:8081
+  name: github
+  repo: BigScrython/Cookbook
+  branch: main
 
 media_folder: "static/images"
 public_folder: "/images"
@@ -14,17 +15,14 @@ collections:
 
     fields:
       - { label: "Title", name: "title", widget: "string" }
-
       - { label: "Source", name: "source", widget: "string" }
-
       - { label: "Link", name: "link", widget: "string" }
-
       - { label: "Image", name: "image", widget: "image" }
 
       - label: "Ingredients"
         name: "ingredients"
-        widget: "text"
+        widget: "list"
 
       - label: "Method"
         name: "method"
-        widget: "text"
+        widget: "list"
