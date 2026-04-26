@@ -23,10 +23,18 @@
       {{ end }}
       <br>
       <h5 class="fullMark pxGap">Ingredients:</h5>
-      <p>{{ .Params.ingredients }}</p>
+      <ul>
+        {{ range .Params.ingredients }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
       <br>
       <h5 class="fullMark pxGap">Method:</h5>
-      <p>{{ .Params.method }}</p>
+      <ol>
+        {{ range .Params.method }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ol>
       <br>
       {{ if .Params.link }}
       <h5 class="halfMark pxGap">
