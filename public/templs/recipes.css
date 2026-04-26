@@ -121,3 +121,8 @@ th.wiki, td.wiki{
    font-weight: bold;
    font-size: 24px;
 }
+
+ul {
+  list-style-type: none;
+  text-align : left;
+}

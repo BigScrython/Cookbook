@@ -27,6 +27,4 @@ collections:
         name: "method"
 <<<<<<< HEAD
         widget: "list"
-=======
-        widget: "list"
 >>>>>>> dbf196f37b7c2b8bb90564dfe560aea16e974600

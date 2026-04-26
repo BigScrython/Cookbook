@@ -8,6 +8,8 @@
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/recipes/</loc>
+  </url><url>
     <loc>http://localhost:1313/savoury/</loc>
   </url><url>
     <loc>http://localhost:1313/savoury/gallery/</loc>
@@ -21,6 +23,8 @@
     <loc>http://localhost:1313/sweet/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/recipes/test/</loc>
   </url><url>
     <loc>http://localhost:1313/sweet/test/</loc>
   </url>
