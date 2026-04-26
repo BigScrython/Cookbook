@@ -19,10 +19,18 @@ collections:
       - { label: "Link", name: "link", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
 
-      - label: "Ingredients"
-        name: "ingredients"
-        widget: "list"
+    - label: "Ingredients"
+      name: "ingredients"
+      widget: "list"
+      field:
+        label: "Ingredient"
+        name: "ingredient"
+        widget: "string"
 
-      - label: "Method"
-        name: "method"
-        widget: "list"
+    - label: "Method"
+      name: "method"
+      widget: "list"
+      field:
+        label: "Step"
+        name: "step"
+        widget: "string"
