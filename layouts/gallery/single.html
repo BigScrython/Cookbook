@@ -1,1 +1,19 @@
-<h1>sym</h1>
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Photo view</title>
+</head>
+<body>
+<div class='main'>
+   <div style="text-align: center; margin-bottom: 5px;">
+      <button class="pageButton pxGap" onclick="window.location.href='/'">
+      Back to gallery
+      </button>
+                <br></br>
+                <div><img src="{{ .Params.image }}" alt="Image" onerror="this.style.display = 'none';" class="pxGap" width="500" height="667"></div>
+      <h2 class="fullMark pxGap">{{ .Title }}</h2>
+                <h3 class="halfMark pxGap">{{ .Params.image }}</h3>
+   </div>
+</div>
+</body>
+</html>
