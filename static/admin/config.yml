@@ -7,6 +7,20 @@ media_folder: "static/images"
 public_folder: "/images"
 
 collections:
+  - name: "gallery"
+    label: "Gallery"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Image" 
+        name: "image" 
+        widget: "image"
+      
+      - label: "Source" 
+        name: "source" 
+        widget: "string"
+
   - name: "recipes"
     label: "Recipes"
     folder: "content/recipes"
