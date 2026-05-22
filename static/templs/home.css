@@ -126,8 +126,8 @@ th.wiki, td.wiki{
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 15px;
-  margin-top: 10px;
+  gap: 1px;
+  margin-top: 1px;
 }
 
 .gallery-item img {
