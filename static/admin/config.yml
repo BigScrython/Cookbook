@@ -66,3 +66,10 @@ collections:
           label: "Step"
           name: "step"
           widget: "string"
+
+      - label: "Sweet or Savoury"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Sweet", value: "sweet" }
+          - { label: "Savoury", value: "savoury" }
