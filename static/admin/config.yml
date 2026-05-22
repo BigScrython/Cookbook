@@ -6,6 +6,9 @@ backend:
 media_folder: "static/images"
 public_folder: "/images"
 
+build:
+  writeStats: true
+
 collections:
   - name: "gallery"
     label: "Gallery"
