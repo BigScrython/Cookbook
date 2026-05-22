@@ -133,7 +133,7 @@ th.wiki, td.wiki{
 .gallery-item img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 0px;
   transition: transform 0.2s ease;
 }
 
