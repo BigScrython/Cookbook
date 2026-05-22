@@ -131,10 +131,11 @@ th.wiki, td.wiki{
 }
 
 .gallery-item img {
-  width: 232px;
+  width: 30%;
   height: auto;
   border-radius: 0px;
   transition: transform 0.2s ease;
+  padding : 0px;
 }
 
 .gallery-item img:hover {
