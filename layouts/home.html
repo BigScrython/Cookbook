@@ -23,23 +23,17 @@
       <br>
       <h3 class="fullMark pxGap">Camera Roll</h3>
    </div>
-<table>
-   <tr>
-      <th><a href="testphoto"><img src="assets/photos/PlaceholderImage10.jpg" alt="Apple" width="232" height="300"></th></a>
-      <th><a href="testphoto"><img src="assets/photos/PlaceholderImage9.jpg" alt="Apple" width="232" height="300"></th></a>
-      <th><a href="testphoto"><img src="assets/photos/PlaceholderImage8.jpg" alt="Apple" width="232" height="300"></th></a>
-   </tr>
-   <tr>
-      <th><a href="testphoto"><img src="assets/photos/PlaceholderImage7.jpg" alt="Apple" width="232" height="300"></th></a>
-      <th><a href="testphoto"><img src="assets/photos/PlaceholderImage6.jpg" alt="Apple" width="232" height="300"></th></a>
-      <th><a href="testphoto"><img src="assets/photos/PlaceholderImage5.jpg" alt="Apple" width="232" height="300"></th></a>
-   </tr>
-   <tr>
-      <th><a href="testphoto"><img src="assets/photos/PlaceholderImage4.jpg" alt="Apple" width="232" height="300"></th></a>
-      <th><a href="testphoto"><img src="assets/photos/PlaceholderImage3.jpg" alt="Apple" width="232" height="300"></th></a>
-      <th><a href="testphoto"><img src="assets/photos/PlaceholderImage2.jpg" alt="Apple" width="232" height="300"></th></a>
-   </tr>
-</table>
+<div class="gallery">
+  {{ range where site.RegularPages "Section" "gallery" }}
+
+    <div class="gallery-item">
+      <a href="{{ .RelPermalink }}">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+      </a>
+    </div>
+
+  {{ end }}
+</div>
 </div>
 </body>
 </html>
