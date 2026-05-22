@@ -131,7 +131,7 @@ th.wiki, td.wiki{
 }
 
 .gallery-item img {
-  width: 30%;
+  width: 100%;
   height: auto;
   border-radius: 0px;
   transition: transform 0.2s ease;
