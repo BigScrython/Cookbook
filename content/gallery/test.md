@@ -1,5 +1,5 @@
 ---
 title: test
-image: /images/biryani.jpg
+image: /images/placeholderimage4.jpg
 source: The coder
 ---
