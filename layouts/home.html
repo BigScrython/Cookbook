@@ -23,15 +23,19 @@
       <br>
       <h3 class="fullMark pxGap">Camera Roll</h3>
    </div>
-{{ with site.GetPage "section" "gallery" }}
-  {{ range .Pages }}
-    <div class="gallery-item">
-      <a href="{{ .RelPermalink }}">
-        <img src="{{ .Params.image }}" alt="{{ .Title }}">
-      </a>
-    </div>
+<div class="gallery">
+  {{ with site.GetPage "section" "gallery" }}
+    {{ range .Pages }}
+
+      <div class="gallery-item">
+        <a href="{{ .RelPermalink }}">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}">
+        </a>
+      </div>
+
+    {{ end }}
   {{ end }}
-{{ end }}
+</div>
 </div>
 </div>
 </body>
