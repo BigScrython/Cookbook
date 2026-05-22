@@ -1,5 +1,5 @@
 ---
 title: test2
-image: /images/placeholderimage4.jpg
+image: /images/biryani.jpg
 source: me
 ---
