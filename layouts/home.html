@@ -28,11 +28,8 @@
     {{ range .Pages }}
 
       <div class="gallery-item">
-        <p>{{ .Title }}</p>
-        <p>{{ .Params.image }}</p>
-
         <a href="{{ .RelPermalink }}">
-          <img src="{{ .Params.image }}" style="width:200px; border:2px solid red;">
+          <img src="{{ .Params.image }}" alt="{{ .Title }}">
         </a>
       </div>
 
