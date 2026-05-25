@@ -31,6 +31,14 @@
       </a>
     </div>
   {{ end }}
+
+  {{ range where site.RegularPages "Section" "recipes" }}
+    <div class="gallery-item">
+      <a href="{{ .RelPermalink }}">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+      </a>
+    </div>
+  {{ end }}
 </div>
 </div>
 </div>
