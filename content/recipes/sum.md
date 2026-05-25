@@ -2,7 +2,7 @@
 title: sum
 source: e
 link: e
-image: /images/placeholderimage3.jpg
+image: /images/biryani.jpg
 ingredients:
   - e
 method:
