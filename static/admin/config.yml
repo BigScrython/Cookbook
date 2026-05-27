@@ -50,6 +50,7 @@ collections:
       - label: "Image"
         name: "image"
         widget: "image"
+        required: false
 
       - label: "Ingredients"
         name: "ingredients"
