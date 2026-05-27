@@ -32,7 +32,7 @@
     </div>
   {{ end }}
 
-{{ range where (where site.RegularPages "Section" "recipes") "Params.image" "!=" "" }}
+{{ range where (where site.RegularPages "Section" "recipes") "Params.image" "!=" nil }}
 
   <div class="gallery-item">
     <a href="{{ .RelPermalink }}">
