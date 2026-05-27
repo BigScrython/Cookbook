@@ -32,16 +32,14 @@
     </div>
   {{ end }}
 
-{{ range where site.RegularPages "Params.image" "!=" "" }}
-  {{ if eq .Section "recipes" }}
+{{ range where (where site.RegularPages "Section" "recipes") "Params.image" "!=" "" }}
 
-    <div class="gallery-item">
-      <a href="{{ .RelPermalink }}">
-        <img src="{{ .Params.image }}" alt="{{ .Title }}">
-      </a>
-    </div>
+  <div class="gallery-item">
+    <a href="{{ .RelPermalink }}">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    </a>
+  </div>
 
-  {{ end }}
 {{ end }}
 </div>
 </div>
