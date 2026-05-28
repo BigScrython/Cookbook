@@ -7,5 +7,5 @@ ingredients:
   - no
 method:
   - yes
-category: sweet
+category: savoury
 ---
