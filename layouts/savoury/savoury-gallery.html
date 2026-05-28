@@ -30,26 +30,16 @@
                 </button>
                 <br></br>
 
-<table>
-   <tr>
-      <td><img src="media/photos/PlaceholderImage10.jpg" alt="Apple" width="349" height="464"></th>
-      <div class="fullMark"><a href="testrecipe">Title 1</a></div>
-      <td><img src="media/photos/PlaceholderImage9.jpg" alt="Apple" width="349" height="464"></th>
-      <div class="fullMark"><a href="testrecipe">Title 2</a></div>
-   </tr>
-   <tr>
-      <td><img src="media/photos/PlaceholderImage7.jpg" alt="Apple" width="349" height="464"></th>
-      <div class="fullMark"><a href="testrecipe">Title 3</a></div>
-      <td><img src="media/photos/PlaceholderImage6.jpg" alt="Apple" width="349" height="464"></th>
-      <div class="fullMark"><a href="testrecipe">Title 4</a></div>
-   </tr>
-   <tr>
-      <td><img src="media/photos/PlaceholderImage4.jpg" alt="Apple" width="349" height="464"></th>
-      <div class="fullMark"><a href="testrecipe">Title 5</a></div>
-      <td><img src="media/photos/PlaceholderImage3.jpg" alt="Apple" width="349" height="464"></th>
-      <div class="fullMark"><a href="testrecipe">Title 6</a></div>
-   </tr>
-</table>
+<div class="gallery">
+{{ range where (where (where site.RegularPages "Section" "recipes") "Params.image" "!=" nil) "Params.category" "savoury" }}
+  <div class="gallery-item">
+    <a href="{{ .RelPermalink }}">
+      <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    </a>
+    <h3 class="fullMark">{{.Title}}</h3>
+  </div>
+{{ end }}
+</div>
 
    </div>
 </div>
