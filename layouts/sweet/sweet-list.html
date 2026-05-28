@@ -29,9 +29,15 @@
                 Gallery View
                 </button>
                 <br></br>
-                <h4 class="fullMark pxGap"><a href="testrecipe">Recipe 1</a></h1>
-                <h4 class="fullMark pxGap"><a href="testrecipe">Recipe 2</a></h4>
-                <h4 class="fullMark pxGap"><a href="testrecipe">Recipe 3</a></h4>
+      
+<div>
+  {{ range where (where site.RegularPages "Section" "recipes") "Params.category" "sweet" }}
+  <a href="{{ .RelPermalink }}">
+    <h3 class="fullMark pxGap">{{.Title}}</h3>
+  </a>
+  {{ end }}
+</div>
+
    </div>
 </div>
 </body>
