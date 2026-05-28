@@ -1,4 +1,4 @@
 ---
 title: "Savoury Gallery"
-layout: "savoury-gallery
+layout: "savoury-gallery"
 ---
