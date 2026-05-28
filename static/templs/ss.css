@@ -1,7 +1,7 @@
 body {
  color: #282828;
  line-height: 1.5;
- background-color: #F0F0F0;
+ background-color: #FFFFFF;
 }
 
 img {
@@ -12,7 +12,7 @@ img {
 
 div.main {
  width: 700px;
- background-color: #FFFFFF;
+ background-color: #F0F0F0;
  margin : auto;
  border : 0px;
  border-color: #0eff00;
