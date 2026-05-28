@@ -31,11 +31,12 @@
                 <br></br>
 
 <div class="gallery">
-{{ range where (where site.RegularPages "Section" "recipes") "Params.image" "!=" nil }}
+{{ range where (where (where site.RegularPages "Section" "recipes") "Params.image" "!=" nil) "Params.category" "sweet" }}
   <div class="gallery-item">
     <a href="{{ .RelPermalink }}">
       <img src="{{ .Params.image }}" alt="{{ .Title }}">
     </a>
+    <h3>{{.Title}}</h3>
   </div>
 {{ end }}
 </div>
