@@ -159,3 +159,22 @@ th.wiki, td.wiki{
    box-sizing: border-box;
    justify-content: center;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1px;
+  margin-top: 1px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  transition: transform 0.2s ease;
+  padding : 0px;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.01);
+}
