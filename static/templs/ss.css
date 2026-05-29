@@ -182,7 +182,7 @@ th.wiki, td.wiki{
 .search-results {
   position: absolute;
   background: white;
-  width: 100%;
+  width: 700px;
   border: 0px solid #ccc;
   z-index: 1000;
 }
