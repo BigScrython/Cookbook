@@ -38,6 +38,11 @@ div.main {
    color : #000814;
    font-weight: 450;
    font-size: 24px;
+
+   text-decoration: underline;
+   text-decoration-color: orange;
+   text-decoration-thickness: 2px;
+   text-underline-offset: 4px;
 }
 
 form {
