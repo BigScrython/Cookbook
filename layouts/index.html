@@ -48,13 +48,27 @@
 </html>
 
 <script>
+let recipes = [];
+
+fetch('/index.json')
+  .then(res => res.json())
+  .then(data => recipes = data);
+
 document.getElementById("searchForm").addEventListener("submit", function(e) {
    e.preventDefault();
-   let query = document.getElementById("searchInput").value.trim();
+
+   let query = document.getElementById("searchInput").value.trim().toLowerCase();
    if (query === "") return;
 
-   let formattedQuery = query.toLowerCase().replace(/\s+/g, "-");
+   let results = recipes.filter(r => 
+     r.title.toLowerCase().includes(query)
+   );
 
-   window.location.href = `/recipes/${formattedQuery}`;
+   if (results.length > 0) {
+     // go to first match
+     window.location.href = results[0].url;
+   } else {
+     alert("No recipes found");
+   }
 });
 </script>
