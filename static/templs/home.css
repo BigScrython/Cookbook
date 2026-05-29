@@ -81,11 +81,18 @@ form {
    font-size: 24px;
    font-weight: bold;
    color: #000814;
-   border: 1px solid black;
+   border: 0px solid black;
    border-radius: 5px;
    outline: none;
    box-sizing: border-box;
    justify-content: center;
+}
+
+.searchBarWrap {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .pxGap {
