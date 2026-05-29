@@ -2,6 +2,8 @@ body {
  color: #282828;
  line-height: 1.5;
  background-color: #FFFFFF;
+ margin: 0;
+ padding: 0;
 }
 
 img {
