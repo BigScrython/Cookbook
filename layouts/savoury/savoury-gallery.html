@@ -68,10 +68,7 @@ input.addEventListener("input", function() {
   }
 
   let matches = recipes
-    .filter(r =>
-      r.title.toLowerCase().includes(query) &&
-      r.category === "savoury"
-    )
+    .filter(r => r.title.toLowerCase().includes(query))
     .slice(0, 5);
 
   resultsBox.innerHTML = matches.map(r => `
@@ -80,4 +77,5 @@ input.addEventListener("input", function() {
     </div>
   `).join("");
 });
+</script>
 </script>
