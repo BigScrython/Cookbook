@@ -17,9 +17,6 @@ div.main {
  border : 15px;
  border-color: #0eff00;
  place-items: center;
- display: flex;
- justify-content: center;
- align-items: center;
 }
 
 .fullMark {
