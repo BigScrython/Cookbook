@@ -35,14 +35,14 @@ div.main {
     border-radius: 0px;
     cursor: pointer;
    width : 49.4%;
-   color : #000814;
+   color : #060606;
    font-weight: 450;
    font-size: 24px;
 
    text-decoration: underline;
    text-decoration-color: #e76f51;
    text-decoration-thickness: 1px;
-   text-underline-offset: 10px;
+   text-underline-offset: 2px;
 }
 
 form {
