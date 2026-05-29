@@ -64,14 +64,14 @@ form {
 .searchBar {
    background-color: #FEFEFE;
    box-sizing: border-box;
-   margin: 2px;
+   margin: 0px;
    width: 100%;
    padding: 10px;
    font-family: "Gill Sans", sans-serif;
    font-size: 24px;
    font-weight: bold;
    color: #000814;
-   border: none;
+   border: 5px;
    border-radius: 5px;
    outline: none;
    box-sizing: border-box;
