@@ -71,7 +71,7 @@ form {
    font-size: 24px;
    font-weight: bold;
    color: #000814;
-   border: 5px;
+   border: 5px solid black;
    border-radius: 5px;
    outline: none;
    box-sizing: border-box;
