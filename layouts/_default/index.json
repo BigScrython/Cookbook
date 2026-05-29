@@ -1,0 +1,11 @@
+[
+{{- $pages := where site.RegularPages "Section" "recipes" -}}
+{{- range $index, $page := $pages -}}
+  {{- if $index }},{{ end }}
+  {
+    "title": {{ $page.Title | jsonify }},
+    "url": {{ $page.RelPermalink | jsonify }},
+    "image": {{ $page.Params.image | jsonify }}
+  }
+{{- end -}}
+]
