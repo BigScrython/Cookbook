@@ -55,21 +55,30 @@ fetch('/index.json')
   .then(res => res.json())
   .then(data => recipes = data);
 
-document.getElementById("searchForm").addEventListener("submit", function(e) {
-   e.preventDefault();
+const input = document.getElementById("searchInput");
+const resultsBox = document.getElementById("searchResults");
 
-   let query = document.getElementById("searchInput").value.trim().toLowerCase();
-   if (query === "") return;
+input.addEventListener("input", function() {
+  let query = input.value.trim().toLowerCase();
 
-   let results = recipes.filter(r => 
-     r.title.toLowerCase().includes(query)
-   );
+  if (query === "") {
+    resultsBox.innerHTML = "";
+    return;
+  }
 
-   if (results.length > 0) {
-     // go to first match
-     window.location.href = results[0].url;
-   } else {
-     alert("No recipes found");
-   }
+  let matches = recipes.filter(r =>
+    r.title.toLowerCase().includes(query)
+  ).slice(0, 5); // limit results
+
+  resultsBox.innerHTML = "";
+
+  matches.forEach(r => {
+    resultsBox.innerHTML += `
+      <div class="search-item" onclick="window.location.href='${r.url}'">
+        <img src="${r.image}">
+        <span>${r.title}</span>
+      </div>
+    `;
+  });
 });
 </script>
