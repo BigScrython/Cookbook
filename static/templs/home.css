@@ -40,7 +40,7 @@ div.main {
    font-size: 24px;
 
    text-decoration: underline;
-   text-decoration-color: #e76f51;
+   text-decoration-color: #432616;
    text-decoration-thickness: 1px;
    text-underline-offset: 2px;
 }
@@ -91,7 +91,7 @@ form {
 .searchBarWrap {
   display: flex;
   border: 0px solid black;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
