@@ -45,6 +45,10 @@ div.main {
    text-underline-offset: 2px;
 }
 
+.pageButton:hover {
+   text-decoration-thickness: 2px;
+}
+
 form {
    display: flex;
    align-items: stretch;
