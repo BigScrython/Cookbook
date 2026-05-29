@@ -10,16 +10,11 @@ img {
     padding: 0;
 }
 
+
 div.main {
- width: min(700px, 100%);
- background-color: #F9F9F9;
- margin : auto;
- border : 0px;
- border-color: #0eff00;
- place-items: center;
- display: flex;
- justify-content: center;
- align-items: center;
+  width: min(700px, 100%);
+  margin: auto;
+  background-color: #F9F9F9;
 }
 
 .fullMark {
