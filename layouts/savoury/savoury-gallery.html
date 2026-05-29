@@ -49,6 +49,9 @@
 <script>
 let recipes = [];
 
+<script>
+let recipes = [];
+
 fetch('/index.json')
   .then(res => res.json())
   .then(data => recipes = data);
@@ -65,7 +68,10 @@ input.addEventListener("input", function() {
   }
 
   let matches = recipes
-    .filter(r => r.title.toLowerCase().includes(query))
+    .filter(r =>
+      r.title.toLowerCase().includes(query) &&
+      r.category === "savoury"
+    )
     .slice(0, 5);
 
   resultsBox.innerHTML = matches.map(r => `
