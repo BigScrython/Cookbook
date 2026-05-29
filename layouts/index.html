@@ -53,6 +53,6 @@ document.getElementById("searchForm").addEventListener("submit", function(e) {
    let query = document.getElementById("searchInput").value.trim();
    if (query === "") return;
    let formattedQuery = query.split(" ").join("+");
-   window.location.href = `/${formattedQuery}`;
+   window.location.href = `/recipes/${formattedQuery}`;
 });
 </script>
