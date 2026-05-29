@@ -18,6 +18,14 @@ div.main {
   background-color: #F9F9F9;
 }
 
+@media (max-width: 768px) {
+  div.main {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
+}
+
 .fullMark {
   background-color: #B0B0B0;
   color: #000000;
