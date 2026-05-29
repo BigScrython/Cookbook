@@ -16,11 +16,19 @@
       <button class="pageButton pxGap" onclick="window.location.href='savoury/list'">
       Savoury
       </button>
-      <form action="/search" method="GET" id="searchForm">
-      <input type="text" name="query" autocomplete="off" placeholder="" class="searchBar" id="searchInput"/>
-      <button type="submit" class="searchButton"><img src="media/searchicon.png" width="35" height="35"></button>
-      </form>
-      <div id="searchResults" class="search-results"></div>
+      <div class="search-wrapper">
+        <form id="searchForm" autocomplete="off">
+          <input type="text"
+                 id="searchInput"
+                 name="query"
+                 class="searchBar"
+                 autocomplete="off" />
+          <button type="submit" class="searchButton">
+            <img src="media/searchicon.png" width="35" height="35">
+          </button>
+        </form>
+        <div id="searchResults" class="search-results"></div>
+      </div>
       <br>
       <h3 class="fullMark pxGap">Camera Roll</h3>
    </div>
