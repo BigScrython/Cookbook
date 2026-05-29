@@ -170,3 +170,9 @@ th.wiki, td.wiki{
   height: 40px;
   object-fit: cover;
 }
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+}
