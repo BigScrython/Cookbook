@@ -158,6 +158,7 @@ th.wiki, td.wiki{
   display: flex;
   align-items: center;
   gap: 10px;
+  background : #F5F5F5;
 }
 
 .search-item:hover {
