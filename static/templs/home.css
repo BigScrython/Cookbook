@@ -64,7 +64,7 @@ form {
 .searchBar {
    background-color: #FEFEFE;
    box-sizing: border-box;
-   margin: 0px;
+   margin: 1px;
    width: 100%;
    padding: 10px;
    font-family: "Gill Sans", sans-serif;
