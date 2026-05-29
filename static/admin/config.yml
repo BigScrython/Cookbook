@@ -46,6 +46,7 @@ collections:
       - label: "Link"
         name: "link"
         widget: "string"
+        required: false
 
       - label: "Image"
         name: "image"
