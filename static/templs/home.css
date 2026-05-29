@@ -145,7 +145,7 @@ th.wiki, td.wiki{
 
 .search-results {
   position: absolute;
-  background: white;
+  background: #FFFFFF;
   width: 100%;
   max-width: 400px;
   border: 1px solid #ccc;
@@ -153,11 +153,9 @@ th.wiki, td.wiki{
 }
 
 .search-item {
-  padding: 8px;
+  padding: 8px 10px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  border-bottom: 1px solid #eee;
 }
 
 .search-item:hover {
