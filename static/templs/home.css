@@ -40,9 +40,9 @@ div.main {
    font-size: 24px;
 
    text-decoration: underline;
-   text-decoration-color: orange;
-   text-decoration-thickness: 2px;
-   text-underline-offset: 4px;
+   text-decoration-color: #e76f51;
+   text-decoration-thickness: 1px;
+   text-underline-offset: 10px;
 }
 
 form {
