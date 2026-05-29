@@ -43,11 +43,31 @@
 </body>
 </html>
 <script>
-document.getElementById("searchForm").addEventListener("submit", function(e) {
-   e.preventDefault();
-   let query = document.getElementById("searchInput").value.trim();
-   if (query === "") return;
-   let formattedQuery = query.split(" ").join("+");
-   window.location.href = `/${formattedQuery}`;
+let recipes = [];
+
+fetch('/index.json')
+  .then(res => res.json())
+  .then(data => recipes = data);
+
+const input = document.getElementById("searchInput");
+const resultsBox = document.getElementById("searchResults");
+
+input.addEventListener("input", function() {
+  let query = input.value.trim().toLowerCase();
+
+  if (query === "") {
+    resultsBox.innerHTML = "";
+    return;
+  }
+
+  let matches = recipes
+    .filter(r => r.title.toLowerCase().includes(query))
+    .slice(0, 5);
+
+  resultsBox.innerHTML = matches.map(r => `
+    <div class="search-item" onclick="window.location.href='${r.url}'">
+      ${r.title}
+    </div>
+  `).join("");
 });
 </script>
