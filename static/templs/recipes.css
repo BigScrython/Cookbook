@@ -12,6 +12,8 @@ img {
     padding: 0;
     width: 50%;
     align-items: center;
+    place-items: center;
+    justify-content: center;
 }
 
 div.main {
