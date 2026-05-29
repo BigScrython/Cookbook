@@ -52,7 +52,9 @@ document.getElementById("searchForm").addEventListener("submit", function(e) {
    e.preventDefault();
    let query = document.getElementById("searchInput").value.trim();
    if (query === "") return;
-   let formattedQuery = query.split(" ").join("+");
+
+   let formattedQuery = query.toLowerCase().split(" ").join("+");
+
    window.location.href = `/recipes/${formattedQuery}`;
 });
 </script>
