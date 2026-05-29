@@ -1,7 +1,7 @@
 ---
 title: new
 source: no
-link: idekatp
+link: https://google.com
 image: /images/placeholderimage5.jpg
 ingredients:
   - Ingrediant 1 x 100g
