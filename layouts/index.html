@@ -66,19 +66,14 @@ input.addEventListener("input", function() {
     return;
   }
 
-  let matches = recipes.filter(r =>
-    r.title.toLowerCase().includes(query)
-  ).slice(0, 5); // limit results
+  let matches = recipes
+    .filter(r => r.title.toLowerCase().includes(query))
+    .slice(0, 5);
 
-  resultsBox.innerHTML = "";
-
-  matches.forEach(r => {
-    resultsBox.innerHTML += `
-      <div class="search-item" onclick="window.location.href='${r.url}'">
-        <img src="${r.image}">
-        <span>${r.title}</span>
-      </div>
-    `;
-  });
+  resultsBox.innerHTML = matches.map(r => `
+    <div class="search-item" onclick="window.location.href='${r.url}'">
+      ${r.title}
+    </div>
+  `).join("");
 });
 </script>
