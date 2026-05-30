@@ -192,17 +192,14 @@ th.wiki, td.wiki{
 
 .hero {
   position: relative;
-  width: 49%;
+  width: 99%;
   overflow: hidden;
   border-radius: 35px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition: transform 0.3s ease;
-
-  isolation: isolate; /* IMPORTANT FIX */
+  isolation: isolate;
 }
 
 .hero:hover {
