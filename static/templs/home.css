@@ -214,3 +214,8 @@ th.wiki, td.wiki{
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
+
+.hero-container {
+  display: flex;
+  gap: 20px;
+}
