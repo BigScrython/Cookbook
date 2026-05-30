@@ -194,11 +194,10 @@ th.wiki, td.wiki{
   position: relative;
   width: 49%;
   overflow: hidden;
-
-  border-radius: 35px; /* move it here */
-
+  border-radius: 35px;
   transition: transform 0.3s ease;
 }
+
 .hero:hover {
   transform: translateY(-10px);
 }
