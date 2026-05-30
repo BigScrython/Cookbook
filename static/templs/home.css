@@ -216,6 +216,7 @@ th.wiki, td.wiki{
   font-size: 48px;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 .hero-container {
