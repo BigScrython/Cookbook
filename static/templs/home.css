@@ -68,7 +68,7 @@ form {
 }
 
 .searchBar {
-   background-color: #ffffff;
+   background-color: #f6f6f6;
    box-sizing: border-box;
    margin: 1px;
    width: 100%;
@@ -87,7 +87,7 @@ form {
 .searchBarWrap {
   display: flex;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
