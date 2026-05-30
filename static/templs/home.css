@@ -189,3 +189,30 @@ th.wiki, td.wiki{
   width: 100%;
   max-width: 700px;
 }
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  display: block;
+  border-radius: 25%;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  color: white;
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
