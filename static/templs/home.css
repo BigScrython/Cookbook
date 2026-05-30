@@ -209,7 +209,7 @@ th.wiki, td.wiki{
 
 .hero img {
   width: 100%;
-  height: 530px;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
