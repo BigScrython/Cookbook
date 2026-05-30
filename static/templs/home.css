@@ -228,7 +228,7 @@ th.wiki, td.wiki{
   background: rgba(0, 0, 0, 0.45);
   padding: 2px 100%;
   border-radius: 12px;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(1px);
 }
 
 .hero-container {
