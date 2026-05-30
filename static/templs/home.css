@@ -82,6 +82,7 @@ form {
    outline: none;
    box-sizing: border-box;
    justify-content: center;
+   flex: 1;
 }
 
 .searchBarWrap {
@@ -89,6 +90,11 @@ form {
   border: 0px solid black;
   border-radius: 35px;
   overflow: hidden;
+}
+
+#searchForm {
+  display: flex;
+  width: 100%;
 }
 
 .pxGap {
