@@ -206,7 +206,7 @@ th.wiki, td.wiki{
   justify-content: center;
   transition: transform 0.3s ease;
   isolation: isolate;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero:hover {
