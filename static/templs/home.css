@@ -31,9 +31,9 @@ div.main {
    font-family: "Oswald", 'Roboto', "Rubik", sans-serif;
     background-color: #FFFFFF;
     color: black;
-    padding: 0px 15px;
+    padding: 10px 0px;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
    width : 49.4%;
    color : #060606;
