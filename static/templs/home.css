@@ -194,6 +194,10 @@ th.wiki, td.wiki{
   position: relative;
   width: 49%;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.hero:hover {
+  transform: translateY(-10px);
 }
 
 .hero img {
