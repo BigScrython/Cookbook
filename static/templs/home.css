@@ -224,7 +224,11 @@ th.wiki, td.wiki{
   text-align: center;
   transform: translate(-50%, -50%);
   z-index: 2;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+ 
+  background: rgba(0, 0, 0, 0.35);
+  padding: 10px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
 }
 
 .hero-container {
