@@ -201,7 +201,7 @@ th.wiki, td.wiki{
   width: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 25%;
+  border-radius: 20px;
 }
 
 .hero-text {
