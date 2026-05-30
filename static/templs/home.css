@@ -156,6 +156,7 @@ th.wiki, td.wiki{
   height: auto;
   border-radius: 0px;
   transition: transform 0.2s ease;
+  border-radius: 35px;
   padding : 0px;
 }
 
