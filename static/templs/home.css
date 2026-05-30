@@ -226,7 +226,7 @@ th.wiki, td.wiki{
   z-index: 2;
   font-weight: 400;
  
-  background: rgba(0.22, 0.153, 0.102, 0.45);
+  background: rgba(0, 0, 0, 0.45);
   padding: 2px 100%;
   border-radius: 12px;
   backdrop-filter: blur(1px);
