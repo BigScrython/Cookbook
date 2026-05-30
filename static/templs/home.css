@@ -254,3 +254,8 @@ th.wiki, td.wiki{
 .noMargin {
   margin: 0px;
 }
+
+.regText {
+  font-size: 24px;
+  font-weight: 400;
+}
