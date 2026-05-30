@@ -194,6 +194,9 @@ th.wiki, td.wiki{
   position: relative;
   width: 49%;
   overflow: hidden;
+
+  border-radius: 35px; /* move it here */
+
   transition: transform 0.3s ease;
 }
 .hero:hover {
@@ -205,7 +208,6 @@ th.wiki, td.wiki{
   height: 530px;
   object-fit: cover;
   display: block;
-  border-radius: 35px;
 }
 
 .hero-text {
