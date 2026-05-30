@@ -220,7 +220,7 @@ th.wiki, td.wiki{
   left: 50%;
   color: white;
   font-size: 28px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Oswald", 'Roboto', sans-serif;
   text-align: center;
   transform: translate(-50%, -50%);
   z-index: 2;
