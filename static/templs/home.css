@@ -213,9 +213,9 @@ th.wiki, td.wiki{
 
   background: linear-gradient(
     to top,
-    rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.6)
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
   );
 
   z-index: 1;
