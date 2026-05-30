@@ -250,3 +250,7 @@ th.wiki, td.wiki{
 .themeColour {
   color: #38271A;
 }
+
+.noMargin {
+  margin: 0px;
+}
