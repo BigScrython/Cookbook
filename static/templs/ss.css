@@ -263,16 +263,17 @@ th.wiki, td.wiki{
 }
 
 .navBarText {
-   font-family: "Oswald", 'Roboto', "Rubik", sans-serif;
-    background-color: #FFFFFF;
-    color: black;
-    padding: 0px 0px;
-    border: none;
-    cursor: pointer;
-   width : 16.66%;
-   color : #060606;
-   font-weight: 400;
-   font-size: 1.5em;
+  font-family: "Oswald", 'Roboto', "Rubik", sans-serif;
+  background-color: #FFFFFF;
+  color: black;
+  padding: 0px 0px;
+  border: none;
+  cursor: pointer;
+  width: 16.66%;
+  color: #060606;
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 0.1rem;
 }
 
 .nav-container {
