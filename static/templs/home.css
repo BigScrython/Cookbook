@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
- margin: auto;
- color: #282828;
- line-height: 1.5;
- background-color: #ffffff;
- font-family: "Oswald", 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  margin: auto;
+  color: #282828;
+  line-height: 1.5;
+  background-color: #ffffff;
+  font-family: "Oswald", 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 img {
-    display: block;
-    margin: auto;
-    padding: 0;
+  display: block;
+  margin: auto;
+  padding: 0;
 }
 
 div.main {
@@ -22,85 +23,83 @@ div.main {
 .fullMark {
   background-color: #ffffff;
   color: #38271A;
-  padding : 5px 0px 5px 0px;
-  width:100%;
+  padding: 5px 0px 5px 0px;
+  width: 100%;
   font-weight: 500;
 }
 
 .pageButton {
-   font-family: "Oswald", 'Roboto', "Rubik", sans-serif;
-    background-color: #FFFFFF;
-    color: black;
-    padding: 4px 0px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-   width : 49.4%;
-   color : #060606;
-   font-weight: 400;
-   font-size: 24px;
+  font-family: "Oswald", 'Roboto', "Rubik", sans-serif;
+  background-color: #FFFFFF;
+  color: black;
+  padding: 4px 0px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 49.4%;
+  color: #060606;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .pageButton:hover {
-   text-decoration-thickness: 2px;
+  text-decoration-thickness: 2px;
 }
 
 form {
-   display: flex;
-   align-items: stretch;
-   width: 700px;
-}
-
-.searchBarWrap {
-   display: flex;
-   align-items: center;
-   border: 0px solid black;
-   border-radius: 35px;
-   overflow: hidden;
-   background-color: #f0f0f0;
-}
-
-.searchBar {
-   flex: 1;
-   background-color: transparent;
-   box-sizing: border-box;
-   margin: 0;
-   width: 100%;
-   padding: 10px 12px;
-   font-family: "Gill Sans", sans-serif;
-   font-size: 18px;
-   font-weight: bold;
-   border: none;
-   outline: none;
+  display: flex;
+  align-items: stretch;
+  width: 700px;
 }
 
 .searchButton {
-   font-family: "Gill Sans", sans-serif;
-   background-color: transparent;
-   color: #000814;
-   padding: 0px 10px;
-   border: none;
-   cursor: pointer;
-   font-weight: bold;
-   font-size: 24px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  font-family: "Gill Sans", sans-serif;
+  background-color: #F6F6F600;
+  color: #000814;
+  padding: 0px 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.search-wrapper {
-   position: relative;
-   width: 100%;
-   max-width: 350px;
+.searchBar {
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  margin: 1px;
+  width: 100%;
+  padding: 2px;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000814;
+  border: 0px solid black;
+  border-radius: 35px;
+  outline: none;
+  box-sizing: border-box;
+  justify-content: center;
+  flex: 1;
+}
+
+.searchBarWrap {
+  display: flex;
+  border: 0px solid black;
+  border-radius: 0px;
+  overflow: hidden;
 }
 
 #searchForm {
-   display: flex;
-   width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .pxGap {
-   margin-bottom : 5px;
+  margin-bottom: 5px;
 }
 
 table {
@@ -116,36 +115,38 @@ td {
   width: 232px;
   overflow: hidden;
   background-color: #f0f0f0;
-  padding : 0px;
+  padding: 0px;
 }
 
 a {
- font-weight: bold;
- color: #5A3B1E ;
- background-color : f0f0f0;
+  font-weight: bold;
+  color: #5A3B1E;
+  background-color: f0f0f0;
 }
 
 a:hover {
 }
 
 img.wiki {
- padding: 10px 0px 10px 0px;
- border-radius: 5%;
+  padding: 10px 0px 10px 0px;
+  border-radius: 5%;
 }
 
 table.wiki {
- border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 h1 {
-   margin: 0;
+  margin: 0;
 }
 
-th.wiki, td.wiki{
- vertical-align: top;
- padding: 10px;
- border: 1px solid #c8c8c8;
+th.wiki,
+td.wiki {
+  vertical-align: top;
+  padding: 10px;
+  border: 1px solid #c8c8c8;
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -158,7 +159,7 @@ th.wiki, td.wiki{
   height: auto;
   border-radius: 0px;
   transition: transform 0.2s ease;
-  padding : 0px;
+  padding: 0px;
 }
 
 .gallery-item img:hover {
@@ -193,6 +194,12 @@ th.wiki, td.wiki{
   object-fit: cover;
 }
 
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -208,7 +215,6 @@ th.wiki, td.wiki{
 .hero:hover {
   transform: translateY(-10px);
 }
-
 
 .hero img {
   width: 100%;
@@ -228,7 +234,6 @@ th.wiki, td.wiki{
   transform: translate(-50%, -50%);
   z-index: 2;
   font-weight: 400;
- 
   background: rgba(0, 0, 0, 0.45);
   padding: 2px 100%;
   border-radius: 12px;
@@ -253,43 +258,40 @@ th.wiki, td.wiki{
 }
 
 .navBarText {
-   font-family: "Oswald", 'Roboto', "Rubik", sans-serif;
-    background-color: #FFFFFF;
-    color: black;
-    padding: 0px 0px;
-    border: none;
-    cursor: pointer;
-   width : 16.66%;
-   color : #060606;
-   font-weight: 400;
-   font-size: 1.2em;
-   letter-spacing: 0.1rem;
+  font-family: "Oswald", 'Roboto', "Rubik", sans-serif;
+  background-color: #FFFFFF;
+  color: black;
+  padding: 0px 0px;
+  border: none;
+  cursor: pointer;
+  width: 16.66%;
+  color: #060606;
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
 .nav-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 24px;
-	flex-wrap: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: nowrap;
 }
 
-.thinLine{
+.thinLine {
   background-color: #2f2f2f;
   width: 700px;
   height: 2px;
-  border: 0px
-  padding: 5px 0px 5px 0px;
+  border: 0px padding: 5px 0px 5px 0px;
   margin: 5px 0px 5px 0px;
 }
 
 .regText {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-
