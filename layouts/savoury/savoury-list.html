@@ -10,21 +10,30 @@
 <div class='main'>
    <div style="text-align: center; margin-bottom: 5px;">
                 <br><br>
-                <div style="margin-bottom: 5px;"><img src="/images/toor-s-cookbook-logo.png"alt="Logo"  width="41%" margin="auto"></div>
-                <button class="pageButton" onclick="window.location.href='/'">
-                Home
-                </button>
-                <button class="pageButton pxGap" onclick="window.location.href='/sweet/list'">
-                Sweet
-                </button>
-                <h1 class="fullMark pxGap">Savoury</h1>
-                <br>
-                <form action="/search" method="GET" id="searchForm">
-                <input type="text" name="query" placeholder="" autocomplete="off" class="searchBar" id="searchInput"/>
-                <button type="submit" class="searchButton"><img src="media/searchicon.png" width="35" height="35"></button>
-                </form>
-                <div id="searchResults" class="search-results"></div>
-                <br>
+      <div style="margin-bottom: 10px;"><img src="/images/toor-s-cookbook-logo.png"alt="Logo"  width="71%" margin="auto"></div>
+      <div class="thinLine"></div>
+      <div class="nav-container">
+      <a href="/sweet/gallery" class="navBarText">SWEET</a>
+      <a href="/savoury/gallery" class="navBarText">SAVOURY</a>
+      <a href="/aboutme" class="navBarText">ABOUT ME</a>
+      <div class="search-wrapper">
+        <div class="searchBarWrap">
+        <form id="searchForm" autocomplete="off">
+          <input type="text"
+                 id="searchInput"
+                 name="query"
+                 class="searchBar"
+                 autocomplete="off" />
+        <button type="submit" class="searchButton pxGap">
+        <img src="/images/searchiconweb.png" width="22" height="22">
+        </button>
+        <div id="searchResults" class="search-results"></div>
+        </form>
+        </div>
+      </div>
+      </div>
+      <div class="thinLine"></div>
+      <br><br>
                 <button class="pageButton" onclick="window.location.href=''">
                 List View
                 </button>
