@@ -94,7 +94,7 @@ form {
 
 #searchForm {
   display: flex;
-  width: 40%;
+  width: 100%;
 }
 
 .pxGap {
