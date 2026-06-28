@@ -255,6 +255,20 @@ th.wiki, td.wiki{
   margin: 0px;
 }
 
+.navBarText {
+   font-family: "Oswald", 'Roboto', "Rubik", sans-serif;
+    background-color: #FFFFFF;
+    color: black;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+   width : 16.66%;
+   color : #060606;
+   font-weight: 400;
+   font-size: 12px;
+}
+
 .regText {
   font-size: 24px;
   font-weight: 400;
