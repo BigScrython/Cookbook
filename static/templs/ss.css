@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
+ margin: auto;
  color: #282828;
  line-height: 1.5;
- background-color: #FFFFFF;
- margin: 0;
- padding: 0;
+ background-color: #ffffff;
+ font-family: "Oswald", 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 img {
@@ -12,41 +14,88 @@ img {
     padding: 0;
 }
 
-
 div.main {
-  width: min(700px, 100%);
+  width: min(700px, 97%);
   margin: auto;
   background-color: #ffffff;
-  font-family: "Oswald", 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 .fullMark {
-  color: #000000;
-  padding : 0px;
+  background-color: #ffffff;
+  color: #38271A;
+  padding : 5px 0px 5px 0px;
   width:100%;
+  font-weight: 500;
 }
 
-.halfMark {
-  background-color: #E5E5E5;
-  color: #000000;
-  padding : 5px;
-  width:49.4%;
-  text-align: center;
-  margin: 0 auto;
+.pageButton {
+   font-family: "Oswald", 'Roboto', "Rubik", sans-serif;
+    background-color: #FFFFFF;
+    color: black;
+    padding: 4px 0px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+   width : 49.4%;
+   color : #060606;
+   font-weight: 400;
+   font-size: 24px;
 }
 
-.quarterMark {
-  background-color: #E5E5E5;
-  color: #000000;
-  padding : 5px;
-  width:200px;
-  margin: 0 auto;
+.pageButton:hover {
+   text-decoration-thickness: 2px;
 }
 
 form {
    display: flex;
    align-items: stretch;
    width: 700px;
+}
+
+.searchButton {
+   font-family: "Gill Sans", sans-serif;
+   background-color: #F6F6F600;
+   color: #000814;
+   padding: 0px 10px;
+   border: none;
+   border-radius: 20px;
+   cursor: pointer;
+   font-weight: bold;
+   font-size: 24px;
+   margin-left: -1px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.searchBar {
+   background-color: #f0f0f0;
+   box-sizing: border-box;
+   margin: 1px;
+   width: 100%;
+   padding: 2px;
+   font-family: "Gill Sans", sans-serif;
+   font-size: 18px;
+   font-weight: bold;
+   color: #000814;
+   border: 0px solid black;
+   border-radius: 35px;
+   outline: none;
+   box-sizing: border-box;
+   justify-content: center;
+   flex: 1;
+}
+
+.searchBarWrap {
+  display: flex;
+  border: 0px solid black;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+#searchForm {
+  display: flex;
+  width: 100%;
 }
 
 .pxGap {
@@ -56,22 +105,18 @@ form {
 table {
   border: 1px solid #F0F0F0;
   table-layout: fixed;
-  width: 100%;
+  width: 700px;
   background-color: #f0f0f0;
-  border-collapse: collapse;
 }
 
 th,
 td {
   border: 1px solid #F0F0F0;
-  width: 50%;
+  width: 232px;
   overflow: hidden;
-  text-align: center;
-  vertical-align: top;
   background-color: #f0f0f0;
-  padding : 1px;
+  padding : 0px;
 }
-
 
 a {
  font-weight: bold;
@@ -92,12 +137,14 @@ table.wiki {
 }
 
 h1 {
- margin: 0;
+   margin: 0;
 }
+
 h3 {
  padding : 0px;
  margin: 0px;
 }
+
 h5 {
  padding : 0px;
  margin: 0px;
@@ -109,56 +156,10 @@ th.wiki, td.wiki{
  border: 1px solid #c8c8c8;
 }
 
-.pageButton {
-    background-color: #D0D0D0;
-    color: black;
-    padding: 10px 10px;
-    border: none;
-    border-radius: 0px;
-    cursor: pointer;
-   width : 49.4%;
-   color : #000814;
-   font-weight: bold;
-   font-size: 24px;
-   font-family: "Oswald", 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-}
-
-
-.searchButton {
-   background-color: #D0D0D0;
-   color: #000814;
-   padding: 10px 0px;
-   border: none;
-   border-radius: 0px;
-   cursor: pointer;
-   font-weight: bold;
-   font-size: 24px;
-   margin-left: -1px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-
-.searchBar {
-   background-color: #E9E9E9;
-   box-sizing: border-box;
-   margin: 0;
-   width: 100%;
-   padding: 10px;
-   font-size: 24px;
-   font-weight: bold;
-   color: #000814;
-   border: none;
-   border-radius: 0px;
-   outline: none;
-   box-sizing: border-box;
-   justify-content: center;
-}
-
 .gallery {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
   margin-top: 1px;
 }
 
@@ -171,15 +172,17 @@ th.wiki, td.wiki{
 }
 
 .gallery-item img:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
 }
 
 .search-results {
   position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
   background: white;
-  width: 700px;
-  border: 0px solid #ccc;
-  z-index: 1000;
+  border: 0px solid #eee;
+  z-index: 9999;
 }
 
 .search-item {
@@ -198,4 +201,104 @@ th.wiki, td.wiki{
   width: 40px;
   height: 40px;
   object-fit: cover;
+}
+
+/* ===== ADDED FROM FIRST FILE (UNIQUE SELECTORS) ===== */
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  isolation: isolate;
+}
+
+.hero:hover {
+  transform: translateY(-10px);
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  color: white;
+  font-size: 28px;
+  font-family: "Oswald", 'Roboto', sans-serif;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-weight: 400;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 2px 100%;
+  border-radius: 12px;
+  backdrop-filter: blur(1px);
+}
+
+.hero-container {
+  display: flex;
+  gap: 1.4%;
+}
+
+.subHeadingPx {
+  font-size: 28px;
+}
+
+.themeColour {
+  color: #38271A;
+}
+
+.noMargin {
+  margin: 0px;
+}
+
+.navBarText {
+   font-family: "Oswald", 'Roboto', "Rubik", sans-serif;
+    background-color: #FFFFFF;
+    color: black;
+    padding: 0px 0px;
+    border: none;
+    cursor: pointer;
+   width : 16.66%;
+   color : #060606;
+   font-weight: 400;
+   font-size: 1.5em;
+}
+
+.nav-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 18px;
+	flex-wrap: nowrap;
+}
+
+.thinLine{
+  background-color: #2f2f2f;
+  width: 700px;
+  height: 2px;
+  border: 0px
+  padding: 5px 0px 5px 0px;
+  margin: 5px 0px 5px 0px;
+}
+
+.regText {
+  font-size: 24px;
+  font-weight: 400;
 }
