@@ -48,7 +48,7 @@ div.main {
 form {
    display: flex;
    align-items: stretch;
-   width: 350px;
+   width: 700px;
 }
 
 .searchButton {
