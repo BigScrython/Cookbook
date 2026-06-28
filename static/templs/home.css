@@ -278,7 +278,7 @@ th.wiki, td.wiki{
 }
 
 .thinLine{
-  color: #F0F0F0;
+  background-color: #ffffff;
   width: 700px;
   height: 2px;
   border: 0px
