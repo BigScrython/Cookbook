@@ -76,6 +76,13 @@ form {
    font-family: "Gill Sans", sans-serif;
    font-size: 18px;
    font-weight: bold;
+   color: #000814;
+   border: 0px solid black;
+   border-radius: 35px;
+   outline: none;
+   box-sizing: border-box;
+   justify-content: center;
+   flex: 1;
 }
 
 .searchBarWrap {
@@ -89,14 +96,6 @@ form {
   position: relative;
   width: 100%;
   max-width: 350px;
-
-  color: #000814;
-  border: 0px solid black;
-  border-radius: 35px;
-  outline: none;
-  box-sizing: border-box;
-  justify-content: center;
-  flex: 1;
 }
 
 #searchForm {
