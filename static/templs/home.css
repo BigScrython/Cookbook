@@ -280,9 +280,9 @@ th.wiki, td.wiki{
 .thinLine{
   background-color: #F0F0F0FF;
   width: 700px;
-  height: 2px;
+  height: 20px;
   border: 0px
-  padding: 50px;
+  padding: 5px;
   margin: 0px;
 }
 
