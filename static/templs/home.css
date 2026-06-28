@@ -277,6 +277,15 @@ th.wiki, td.wiki{
 	flex-wrap: nowrap;
 }
 
+.thinLine{
+  background-color: lightgrey;
+  width: 700px;
+  height: 2px;
+  border: 0px solid green;
+  padding: 0px;
+  margin: 0px;
+}
+
 .regText {
   font-size: 24px;
   font-weight: 400;
