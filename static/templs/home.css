@@ -273,7 +273,7 @@ th.wiki, td.wiki{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 180px;
+	gap: 24px;
 	flex-wrap: nowrap;
 }
 
