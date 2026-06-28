@@ -274,7 +274,7 @@ th.wiki, td.wiki{
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 .regText {
