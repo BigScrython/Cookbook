@@ -119,12 +119,8 @@ td {
 }
 
 a {
- font-weight: bold;
- color: #5A3B1E ;
- background-color : f0f0f0;
-}
-
-a:hover {
+	text-decoration: none;
+	color: inherit;
 }
 
 img.wiki {
@@ -202,8 +198,6 @@ th.wiki, td.wiki{
   height: 40px;
   object-fit: cover;
 }
-
-/* ===== ADDED FROM FIRST FILE (UNIQUE SELECTORS) ===== */
 
 .search-wrapper {
   position: relative;
