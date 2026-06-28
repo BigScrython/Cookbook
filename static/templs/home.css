@@ -278,11 +278,11 @@ th.wiki, td.wiki{
 }
 
 .thinLine{
-  background-color: lightgrey;
+  background-color: #F0F0F0;
   width: 700px;
   height: 2px;
-  border: 0px solid green;
-  padding: 0px;
+  border: 0px
+  padding: 5px;
   margin: 0px;
 }
 
